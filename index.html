@@ -1,27 +1,35 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Rebecca Schwartz | UX Designer</title>
-    <!-- <link rel="stylesheet" href="css/outline.css"> -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css" />
-    <link rel="stylesheet" href="css/style.css">
-  </head>
-  <body>
+
+<head>
+  <meta charset="utf-8">
+  <title>Rebecca Schwartz | UX Designer</title>
+  <!-- <link rel="stylesheet" href="css/outline.css"> -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css" />
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="js/simple-scroll.js" charset="utf-8"></script>
+  <script src="js/app.js" charset="utf-8"></script>
+</head>
+
+<body>
 
   <!-- Note: columns can be nested, but it's not recommended since Skeleton's grid has %-based gutters, meaning a nested grid results in variable with gutters (which can end up being *really* small on certain browser/device sizes) -->
-    <header class="container-fluid text-center">
-      <img src="images/logo-bright.png" alt="Rebecca Schwartz" style="width: 100%; max-width: 600px">
-      <div class="container" style="max-width: 400px">
-        <nav class="row">
-          <a class="columns four" href="#about">About</a>
-          <a class="columns four" href="#work">Work</a></li>
-          <a class="columns four" href="#contact">Contact</a></li>
-        </nav>
-      </div>
-    </header>
+  <header class="container-fluid text-center">
+    <div class="logo">
+      <img src="images/logo-bright.png" alt="Rebecca Schwartz">
+    </div>
+    <div class="navigation">
+      <ul class="menu">
+        <li><a href="#about" class="scroll">About</a></li>
+        <li><a href="#work" class="scroll">Work</a></li>
+        <li><a href="#contact" class="scroll">Contact</a></li>
+      </ul>
+    </div>
+  </header>
 
-    <section id="about" class="container">
+  <section id="about">
+    <div class="container">
       <h1 class="text-center">About</h1>
       <div class="row">
         <div class="columns four">
@@ -39,119 +47,133 @@
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section id="work" class="container text-center">
-      <h1>Work</h1>
-      <div class="row">
-        <div class="columns six">
-          <img class="u-max-full-width" src="images/nappy.jpg" alt="Project 1 - Nappy">
-        </div>
-        <div class="columns six">
-          <img class="u-max-full-width" src="images/ggs.jpg" alt="Project 2 - Growing Garden Supply">
-        </div>
-      </div>
-      <div class="row">
-        <div class="columns six">
-          <img class="u-max-full-width" src="images/v-and-a.png" alt="V&A App">
-        </div>
-        <div class="columns six">
-            <img class="u-max-full-width" src="images/project4.jpg" alt="Project 4">
-          </div>
-      </div>
+  <section id="work" class="container text-center">
+    <h1>Work</h1>
+    <div class="row">
+      <a href="#nappy" class="columns six project" data-project="nappy">
+        <img class="u-max-full-width" src="images/NappY-colour.png" alt="Project 1 - Nappy">
+      </a>
+      <a href="#garden" class="columns six project" data-project="garden">
+        <img class="u-max-full-width" src="images/ggs-colour.png" alt="Project 2 - Growing Garden Supply">
+      </a>
+    </div>
+    <div class="row">
+      <a href="#v-and-a" class="columns six project" data-project="v-and-a">
+        <img class="u-max-full-width" src="images/v-and-a-colour.png" alt="V&A App">
+      </a>
+      <a href="#four-color" class="columns six project" data-project="four-colour">
+        <img class="u-max-full-width" src="images/4-colour.png" alt="Project 4">
+      </a>
+    </div>
+  </section>
 
-    </section>
-    <section id="v-and-a">
+  <section id="nappy" class="container project-info">
+    <h2>Nappy</h2>
+  </section>
 
+  <section id="garden" class="container project-info">
+    <h2>Garden</h2>
+  </section>
 
-      <h2>The Client </h2>
+  <section id="four-colour" class="container project-info">
+    <h2>4-Color</h2>
+  </section>
 
-      <p>Victoria and Albert Museum (V&A)</p>
-
-      <h2>The Problem</h2>
-
-      <p>The V&A wanted to make visiting the museum much easier and engaging, and allow visitors to find exhibits that would most interest them, and be able to keep track of the most interesting information, displays, or exhibits that they discover on their trip to the museum. They would like to feature new exhibits and tips to visitors on what they should explore based on the visitors profile.</p>
-
+  <section id="v-and-a" class="container project-info">
+    <h2>The Client </h2>
+    <p>Victoria and Albert Museum (V&A)</p>
+    <h2>The Problem</h2>
+    <p>The V&A wanted to make visiting the museum much easier and engaging, and allow visitors to find exhibits that would most interest them, and be able to keep track of the most interesting information, displays, or exhibits that they discover on
+      their trip to the museum. They would like to feature new exhibits and tips to visitors on what they should explore based on the visitors profile.</p>
       <h2>The Goal</h2>
-      <p>To create either a responsive website OR native application that would include an interactive mobile map of the museum with the ability to mark exhibits/areas they would like to visit. A personal “passport” or interactive scavenger hunt to encourage discovery within the museum. A feature that allows the user to learn more information about the topic of a certain exhibit or display that they come across and the ability to tie-in with their website to save visits or plan future visits.</p>
-
-      <h2>My Role</h2>
-      <p>As part of a team of UX designers we took on all aspects of the design process together. Each focusing on specific sections within each step of the process.</p>
-
-      <h2>Skills Used</h2>
-      <ul>
-        <li>User Interviews</li>
-        <li>Competitor Analysis</li>
-        <li>Sketching</li>
-        <li>Wireframing</li>
-        <li>Prototyping</li>
-        <li>UI design</li>
-      </ul>
-      <h2>Our Process</h2>
-      <h3>Discovery</h3>
-      <p>As a group we created a screener survey to find users to interview. After collating the results from these we carried out more in-depth user interviews, as well as a few guerrilla style interviews at the V&A. </p>
-      <p>A competitor analysis was carried out to see where the Victoria and Albert sat in the market.</p>
-      <p>Our findings from both the users and competitors is that there is a definite gap in the market of an app that would help users navigate the museum. This was highlighted by some of the quotes we compiled after our user research.</p>
-      <h3>User Personas</h3>
-      <p>Based on all our user research we were able to create a persona and scenario based on the shared qualities of the users we interviewed separately.</p>
-      <div class="container-fluid text-center">
-        <img src="images/persona.png" alt="Vanessa - Persona" style="width: 100%; max-width: 600px">
-      </div>
-
-      <div class="row text-italic">
-        <p>Vanessa is planning a hen-do for a friend on the third weekend in June. She looks for interesting events in Time Out. She finds an exhibition at the V&A: Pink Floyd….</p>
-      </div>
-      <p>Having our persona, Vanessa, and the hen party scenario to focus on during the ideation phase meant we were able to create much more targeted and relevant solutions.</p>
-      <h3>Design Studio</h3>
-      <p>We held a design studio where we looked more specifically at navigation, as this was discovered to be our users main pain point. Here are some of the ideas I sketched for the interactive map feature.</p>
-      (IMAGE)
-      <p>After collectively discussing all the ideas we had individually sketched, the best solutions were selected that most effectively solved the pain points that Vanessa faced. Here were the top five things we focused on:</p>
-      <div class="container-fluid text-center">
-        <img src="images/design-studio-big.png" alt="Top 5 findings" style="width: 100%; max-width: 600px">
-      </div>
-      <p>From these original sketches we were able to create wire flows for Vanessa’s journey which we turned into a clickable prototype to test with users. </p>
-      <h3>Our Findings and Iterations</h3>
-        <p>I’m Lost - Didn’t work due to it’s negative connotations as well as one of the quotes a user gave us “can you really get lost in a museum?” This developed into Guide Me and finally Maps based on more user testing. We found that simplicity was key in helping our users to locate functions that they needed quickly.</p>
-        <div class="container-fluid text-center">
-          <img src="images/i-was-lost.png" alt="Lost image" style="width: 100%; max-width: 600px">
-        </div>
-        <p>App Navigation - We tried various different ways to navigate around the app, eventually settling on a bottom tab bar. This went through a couple of variations as we upped the fidelity as shown below.</p>
-        <div class="container-fluid text-center">
-          <img src="images/bottom-tab.png" alt="Tab Bar" style="width: 100%; max-width: 600px">
-        </div>
-        <p>Maps - We had originally tested our idea with two separate maps (one for the overall museum and the other for specific exhibitions) but realised through testing that it would be better for our users to have one unified map.</p>
-        <div class="container-fluid text-center">
-          <img src="images/when-2-become-1.png" alt="2 become 1" style="width: 100%; max-width: 600px">
-        </div>
-        <p>Progress Checker - This was our idea that was most instantly recognised by users so we wanted to keep it close to our original idea. The only amendments were to remove the hint and add a point to show where the user was. </p>
-        <div class="container-fluid text-center">
-          <img src="images/where-was-i.png" alt="Where was I?" style="width: 100%; max-width: 600px">
-        </div>
-        <p>Meeting Point - The final idea was specifically based around Vanessa’s specific scenario, visiting in a big group, and during our design phase became part of a process that was too linear. As shown below we amended this so a meeting point could be set at any time from the main Maps menu. Our users appreciated the text functionality so that friends without the app could also receive the information. </p>
-        <div class="container-fluid text-center">
-          <img src="images/bringing-people-together.png" alt="Bringing people together" style="width: 100%; max-width: 600px">
-        </div>
-      <h2>Prototype</h2>
-    </section>
-
-    <section id="contact" class="container text-center">
-      <h1>Contact</h1>
-      <nav class="row">
-        <a class="columns six">hello@rebeccaschwartz.co.uk</a>
-        <a class="columns six">Phone</a>
-      </nav>
-
-    </section>
-
-    <footer class="container text-center">
-      <div class="box block">
+      <p>To create either a responsive website OR native application that would include an interactive mobile map of the museum with the ability to mark exhibits/areas they would like to visit. A personal “passport” or interactive scavenger hunt to encourage
+        discovery within the museum. A feature that allows the user to learn more information about the topic of a certain exhibit or display that they come across and the ability to tie-in with their website to save visits or plan future visits.</p>
         <div class="row">
-          <a class="columns three" href="https://www.linkedin.com/in/rebeccaschwartzux/"><img src="images/linkedin.png" alt="LinkedIn"></a>
-          <a class="columns three" href="https://medium.com/@Schwartzy"><img src="images/medium.png" alt="Medium"></a>
-          <a class="columns three" href="https://www.instagram.com/schwartzy25/"><img src="images/instagram.png" alt="Instagram"></a>
-          <a class="columns three" href="https://twitter.com/rschwartz_25"><img src="images/twitter.png" alt="Twitter"></a>
+          <div class="one-half column">
+            <h2>My Role</h2>
+            <p>As part of a team of UX designers we took on all aspects of the design process together. Each focusing on specific sections within each step of the process.</p>
+          </div>
+          <div class="one-half column">
+            <h2>Skills Used</h2>
+            <ul>
+              <li>User Interviews</li>
+              <li>Competitor Analysis</li>
+              <li>Sketching</li>
+              <li>Wireframing</li>
+              <li>Prototyping</li>
+              <li>UI design</li>
+            </ul>
+          </div>
         </div>
-      </div>
-    </footer>
-  </body>
-</html>
+
+        <h2>Our Process</h2>
+        <h3>Discovery</h3>
+        <p>As a group we created a screener survey to find users to interview. After collating the results from these we carried out more in-depth user interviews, as well as a few guerrilla style interviews at the V&A. </p>
+        <p>A competitor analysis was carried out to see where the Victoria and Albert sat in the market.</p>
+        <p>Our findings from both the users and competitors is that there is a definite gap in the market of an app that would help users navigate the museum. This was highlighted by some of the quotes we compiled after our user research.</p>
+        <h3>User Personas</h3>
+        <p>Based on all our user research we were able to create a persona and scenario based on the shared qualities of the users we interviewed separately.</p>
+        <div class="container-fluid text-center">
+          <img src="images/persona.png" alt="Vanessa - Persona" style="width: 100%; max-width: 800px">
+        </div>
+
+        <div class="row text-italic">
+          <p>Vanessa is planning a hen-do for a friend on the third weekend in June. She looks for interesting events in Time Out. She finds an exhibition at the V&A: Pink Floyd….</p>
+        </div>
+        <p>Having our persona, Vanessa, and the hen party scenario to focus on during the ideation phase meant we were able to create much more targeted and relevant solutions.</p>
+        <h3>Design Studio</h3>
+        <p>We held a design studio where we looked more specifically at navigation, as this was discovered to be our users main pain point. Here are some of the ideas I sketched for the interactive map feature.</p>
+        (IMAGE)
+        <p>After collectively discussing all the ideas we had individually sketched, the best solutions were selected that most effectively solved the pain points that Vanessa faced. Here were the top five things we focused on:</p>
+        <div class="container-fluid text-center">
+          <img src="images/design-studio-big.png" alt="Top 5 findings" style="width: 100%; max-width: 800px">
+        </div>
+        <p>From these original sketches we were able to create wire flows for Vanessa’s journey which we turned into a clickable prototype to test with users. </p>
+        <h3>Our Findings and Iterations</h3>
+        <p>I’m Lost - Didn’t work due to it’s negative connotations as well as one of the quotes a user gave us “can you really get lost in a museum?” This developed into Guide Me and finally Maps based on more user testing. We found that simplicity was
+          key in helping our users to locate functions that they needed quickly.</p>
+          <div class="container-fluid text-center">
+            <img src="images/i-was-lost.png" alt="Lost image" style="width: 100%; max-width: 800px">
+          </div>
+          <p>App Navigation - We tried various different ways to navigate around the app, eventually settling on a bottom tab bar. This went through a couple of variations as we upped the fidelity as shown below.</p>
+          <div class="container-fluid text-center">
+            <img src="images/bottom-tab.png" alt="Tab Bar" style="width: 100%; max-width: 800px">
+          </div>
+          <p>Maps - We had originally tested our idea with two separate maps (one for the overall museum and the other for specific exhibitions) but realised through testing that it would be better for our users to have one unified map.</p>
+          <div class="container-fluid text-center">
+            <img src="images/when-2-become-1.png" alt="2 become 1" style="width: 100%; max-width: 800px">
+          </div>
+          <p>Progress Checker - This was our idea that was most instantly recognised by users so we wanted to keep it close to our original idea. The only amendments were to remove the hint and add a point to show where the user was. </p>
+          <div class="container-fluid text-center">
+            <img src="images/where-was-i.png" alt="Where was I?" style="width: 100%; max-width: 800px">
+          </div>
+          <p>Meeting Point - The final idea was specifically based around Vanessa’s specific scenario, visiting in a big group, and during our design phase became part of a process that was too linear. As shown below we amended this so a meeting point could
+            be set at any time from the main Maps menu. Our users appreciated the text functionality so that friends without the app could also receive the information. </p>
+            <div class="container-fluid text-center">
+              <img src="images/bringing-people-together.png" alt="Bringing people together" style="width: 100%; max-width: 800px">
+            </div>
+            <h2>Prototype</h2>
+          </section>
+
+          <section id="contact" class="container text-center">
+            <h1>Contact</h1>
+            <div class="row">
+              <a class="columns six">hello@rebeccaschwartz.co.uk</a>
+              <a class="columns six">Phone</a>
+            </div>
+          </section>
+
+          <footer class="container text-center">
+            <ul class="social">
+              <li><a href="https://www.linkedin.com/in/rebeccaschwartzux/"><img src="images/linkedin.png" alt="LinkedIn"></a></li>
+              <li><a href="https://medium.com/@Schwartzy"><img src="images/medium.png" alt="Medium"></a></li>
+              <li><a href="https://www.instagram.com/schwartzy25/"><img src="images/instagram.png" alt="Instagram"></a></li>
+              <li><a  href="https://twitter.com/rschwartz_25"><img src="images/twitter.png" alt="Twitter"></a></li>
+            </ul>
+          </footer>
+        </body>
+
+        </html>

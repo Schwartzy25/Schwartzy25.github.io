@@ -1,10 +1,12 @@
-/*header{
-  background: #FFB71E;
-}*/
+html, body {
+  margin: 0;
+  padding: 0;
+}
 
 h1{
-  font-family: "Galada";
+  font-family: "Montserrat";
   font-size: 50px;
+  font-weight: bold;
   margin: 50px 0;
 }
 
@@ -59,6 +61,77 @@ p {
   font-weight: 300;
 }
 
+a {
+  color: black;
+  text-decoration: none;
+  font-family: "Montserrat";
+  font-weight: normal;
+  font-size: 25px;
+}
+
 header a:hover {
-  background-image: images/Triangle 2.png;
+  background-image: images/nav-tri-1.png;
+}
+
+header {
+  min-height: 100vh;
+}
+
+header .logo {
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+header .logo img {
+  max-width: 300px;
+}
+
+header .navigation {
+  background: white;
+}
+
+header .navigation .menu {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+header .navigation .menu li {
+  display: inline-block;
+  padding: 10px;
+}
+
+.fix {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+
+section {
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+#about {
+  background: #fafafa;
+  padding: 60px;
+}
+
+.project-info {
+  display: none;
+}
+
+footer .social li {
+  display: inline-block;
+}
+
+footer .social a {
+  padding: 10px;
+}
+
+footer .social img {
+  max-width: 50px;
 }
