@@ -85,7 +85,7 @@ header .logo {
 }
 
 header .logo img {
-  max-width: 300px;
+  max-width: 500px;
 }
 
 header .navigation {
@@ -118,6 +118,21 @@ section {
 #about {
   background: #fafafa;
   padding: 60px;
+}
+
+#about .social {
+position: bottom}
+
+#about .social li {
+  display: inline-block;
+}
+
+#about .social a {
+  padding: 10px;
+}
+
+#about .social img {
+  max-width: 50px;
 }
 
 .project-info {
